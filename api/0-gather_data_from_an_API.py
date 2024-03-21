@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-using this REST API, for a given employee ID, 
+using this REST API, for a given employee ID,
 returns information about his/her TODO list progress.
 """
 
@@ -11,7 +11,6 @@ import sys
 if __name__ == "__main__":
     # Base URL for the JSONPlaceholder API
     url = "https://jsonplaceholder.typicode.com/"
-    
     employee_id = sys.argv[1]
     user = requests.get(url + "users/{}".format(employee_id)).json()
 
