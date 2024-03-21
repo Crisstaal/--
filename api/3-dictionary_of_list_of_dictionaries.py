@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Using what you did in the task #0, 
+Using what you did in the task #0,
 extend your Python script to export data in the JSON format.
 """
 
@@ -41,4 +41,3 @@ if __name__ == "__main__":
     # Write the data to a JSON file
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump(data_to_export, jsonfile, indent=4)
-
